@@ -27,7 +27,7 @@ correlations = df[features + [target]].corr()[target].sort_values(ascending=Fals
 print("\n Correlation with total_price:")
 print(correlations)
 
-selected_features = [f for f in features if abs(correlations[f]) > 0.1]
+selected_features = [f for f in features] #if abs(correlations[f]) > 0.1]
 print("\n Selected features:", selected_features)
 
 #  Kiểm tra VIF
